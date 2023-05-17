@@ -19,11 +19,12 @@ header ul li{
     
     
     list-style-type:none;
+    background-color: bisque;
     
 }
  header ul li a {
     
-   color: bisque;
+   color: #553c9a;
     background-clip: text;
     -webkit-background-clip: text;
     text-decoration: none;
