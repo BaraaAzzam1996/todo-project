@@ -28,33 +28,26 @@ if ((text) == true) {
 
 alert('first of All We want to ask you some to Make a Survey To Modify Our Website , So please answer by yes or no');
 let questiOne =  prompt('Do You Like Our Website?');
-if (questiOne===""){
-    questiOne="invalid";
-}
 let questiTwo = prompt("Do You feel the we have to change somthing in our website?");
-if (questiTwo=== ""){
-    questiTwo="invalid";
-}
 let questiThree = prompt("In your opanion Do you find our Website useful?");
-if (questiThree=== ""){
-    questiThree="invalid";}
-
-
-
 let array = [questiOne,questiTwo,questiThree];
+function Invalid() {
+    for (let i=0;i<array.length;i++){
+        if (array[i]==="") {
+            array[i]="invalid";
+            
+        }
+    }
+    
+}
+Invalid();
+
 for (let i = 0; i < array.length; i++) {
     const element = array[i];
+
     console.log (array [i]);
       
 }
-
-
-
-
-
-
-
-
 
 
 
